@@ -1,0 +1,45 @@
+{
+    "name": "GPN15 Root",
+    "permissions": {
+        "network": "Needs to fetch schedule xml"
+    },
+    "options": [{
+        "title": "Appearance",
+        "type": "section"
+    }, {
+        "title": "Background",
+        "ui_width": 4,
+        "name": "background",
+        "type": "resource",
+        "valid": ["image", "video", "child"],
+        "default": "empty.png"
+    },
+    
+    {
+        "title": "Clock",
+        "type": "section"
+    }, {
+        "title": "Time Zone",
+        "ui_width": 4,
+        "name": "timezone",
+        "type": "select",
+        "hint": "The timezone",
+        "options": [
+            ["UTC", "UTC"],
+            ["Europe/Berlin", "Europa / Berlin"]
+        ],
+        "default": "UTC"
+    }, 
+    
+    {
+        "title": "Schedule",
+        "type": "section"
+    }, {
+        "title": "XML Fahrplan Url",
+        "ui_width": 10,
+        "name": "schedule_url",
+        "doc_link": true,
+        "type": "string",
+        "default": "http://localhost/"
+    }]
+}

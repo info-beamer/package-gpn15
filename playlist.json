@@ -1,0 +1,14 @@
+[{
+    "module": "images"
+}, {
+    "module": "talks"
+}, {
+    "module": "twitter"
+}, {
+    "module": "gpn"
+}, {
+    "module": "text",
+    "options": {
+        "text": "This is a text. And here is some more text"
+    }
+}]

@@ -4,3 +4,24 @@ This is mostly the code that was running at the GPN 15 conference (https://entro
 It was cleaned up after the conference and made better. Now you can properly reload and change
 modules while the visualization is running. I didn't port over all modules, but the missing
 modules (show child nodes, etc) should be easy to add.
+
+== Dependencies
+
+This code requires at least info-beamer pi version 0.9.
+
+== Running
+
+Have a look at the {{{config.json.example}}} files. Copy them over to {{{config.json}}} and
+modify them. The top level directory and the twitter directory have a runnable {{{service}}} file.
+The top level file is responsible for sending time and talk information to info-beamer. The
+twitter directory connects to twitter and saves avatar images and retrieved tweets into
+the file tweets.json in the top level directory. 
+
+To add new images to the image rotation just add jpeg or png files with a {{{img_}}} prefix.
+
+The file {{{playlist.json}}} is the main playlist. You can add/change/remove modules and
+their options while the visualization is running.
+
+Normally [[https://info-beamer.com/hosted|info-beamer hosted]] sets up an environemnt where
+all those script are executed automatically. If you want to run everything manually that's
+your job now :-)

@@ -3,7 +3,6 @@ import os
 import sys
 import json
 import urllib
-import datetime
 import traceback
 import calendar
 from operator import itemgetter
@@ -15,7 +14,7 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 
-from hosted import CONFIG, NODE
+from hosted import CONFIG
 
 CONFIG.restart_on_update()
 
